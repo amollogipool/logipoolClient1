@@ -1,0 +1,67 @@
+<p>employeeform works!</p>
+<div>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="employee name" [(ngModel)]="employeeForm.name" [formControl]="empName" required>
+            <mat-label>Employee Name</mat-label>
+            <mat-icon matSuffix>perm_identity</mat-icon>
+            <mat-error *ngIf="empName.hasError('required')">
+                Name is required.
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput type="email" placeholder="employee email" [(ngModel)]="employeeForm.email" [formControl]="empEmail" required>
+            <mat-error *ngIf="empEmail.hasError('required')">
+                Email is required.
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="employee contact"  [(ngModel)]="employeeForm.contact" [formControl]="empContact" required>
+            <mat-error *ngIf="empContact.hasError('required')">
+                Mobile Number is required.
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="employee gender" [(ngModel)]="employeeForm.gender"  [formControl]="empGender" required>
+            <mat-error *ngIf="empGender.hasError('required')">
+                Gender is required.
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="employee date of birth" [(ngModel)]="employeeForm.dob"  [formControl]="empDob" required>
+            <mat-error *ngIf="empDob.hasError('required')">
+                Date Of Birth is required.
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="employee designation" [(ngModel)]="employeeForm.designation"  [formControl]="empDesig" required>
+            <mat-error *ngIf="empDesig.hasError('required')">
+                Designation is required.
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="employee salary" [(ngModel)]="employeeForm.salary" [formControl]="empSalary" required>
+            <mat-error *ngIf="empSalary.hasError('required')">
+                Salary is required.
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="employee address"  [(ngModel)]="employeeForm.address" [formControl]="empAddress" required>
+            <mat-error *ngIf="empAddress.hasError('required')">
+                Address is required.
+            </mat-error>
+        </mat-form-field>
+         
+        <div>
+                <button mat-raised-button mat-primary (click)="submit()">{{method=='edit'?'Update':'Create'}}</button>
+        </div>
+        
+    </form>
+</div>

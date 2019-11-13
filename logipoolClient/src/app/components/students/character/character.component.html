@@ -1,0 +1,28 @@
+<div class="container">
+    <table class="table table-responsive">
+      <thead>
+          <tr>
+            <th>Index</th>
+            <th>Actor Name</th>
+            <th>Character Name</th>
+            <th>Gender</th>
+            <th>Status</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let character of characters; 
+                    let i = index;
+                    let even = even; 
+                    let odd = odd;
+                    let first = first; 
+                    let last = last;"
+                    [ngClass]="{ odd: odd, even: even, first: first, last: last }">
+          <td>{{ i+1 }}</td>
+          <td>{{ character.actor_name }}</td>
+          <td>{{ character.character_name }}</td>
+          <td>{{ character.gender }}</td>
+          <td>{{ character.status }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

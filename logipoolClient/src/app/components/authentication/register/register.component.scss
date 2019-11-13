@@ -1,0 +1,93 @@
+/* .signin-content {
+  
+  background-image: url("C:\Users\PC-1\Documents\work\soci\src\assets\Images\bg7.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 100px 1rem;
+  background-repeat: no-repeat;
+  
+  } */
+
+  #toolbar{
+    /* border-radius: 30px; */
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
+  
+  form {
+    position: relative;
+    top:20px;
+  }
+  
+  /* .my-form{
+      min-width: 150px;
+      max-width: 500px;
+      width: 100%;
+    } */
+     
+    .full-width-input {
+      width: 100%;
+      border: 1px;
+    }
+  
+    .first {
+      position: relative;
+      /* border-radius: 5%; */
+        max-width: 450px;
+        padding-bottom: 50px;
+        margin-left: 10%;
+        margin-top: 2%;
+        text-align: center;
+        background-color: #ffffffd8;
+        /* border: 1px solid rgba(5, 5, 5, 0.89); */
+        box-shadow: -1px 6px 21px -2px rgba(102, 102, 102, 0.822) !important;
+        -webkit-box-shadow: -1px 6px 21px -2px rgba(102, 102, 102, 0.822) !important;
+        -moz-box-shadow: -1px 6px 21px -2px rgba(102, 102, 102, 0.822) !important;
+   }
+  .second{
+    position: relative;
+      /* border-radius: 5%; */
+        max-width: 450px;
+        margin-left: 55%;
+        margin-top: -450px;
+        text-align: center;
+        background-color: #ffffffd8;
+        /* border: 1px solid rgba(5, 5, 5, 0.89); */
+        box-shadow: -1px 6px 21px -2px rgba(102, 102, 102, 0.822) !important;
+        -webkit-box-shadow: -1px 6px 21px -2px rgba(102, 102, 102, 0.822) !important;
+        -moz-box-shadow: -1px 6px 21px -2px rgba(102, 102, 102, 0.822) !important;
+  }
+  
+     .regi{
+       font-size: 40px;
+      font-weight: bolder;
+      color: rgb(7, 7, 7)!important;
+      margin-left: 41%;
+      border: px solid rgba(35, 24, 160, 1.53);
+      /* border-radius: 30px; */
+      }
+  
+      #close:hover{
+        background-position: right center;
+        background-color: rgba(0, 0, 0,  0.445);
+      }
+  
+      #close{
+       border: 2px solid rgba(105, 105, 105, 0.89);
+      font-weight: bolder;
+      background-color: rgba(5, 5, 5, 0.692);
+      border-radius: 50px !important;
+      top: -35px;
+      color: white;
+      position: relative;
+      width: 40%;
+      margin: 20px;
+      padding: 1px;
+      }
+  
+      .buttons{
+        position: relative;
+        top: 40px;
+      }
+  
+      

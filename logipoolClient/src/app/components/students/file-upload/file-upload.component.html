@@ -1,0 +1,34 @@
+<!-- <div class="container">
+    <form [formGroup]="form" (ngSubmit)="submitUser()">
+ 
+        <div class="progress form-group" *ngIf="progress > 0">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" [style.width.%]="progress">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input type="file" (change)="uploadFile($event)">
+        </div>
+
+        <div class="form-group input-group-lg">
+            <input class="form-control" placeholder="Name" formControlName="name">
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-danger btn-block btn-lg">Create</button>
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <div *ngFor="let car of cars" [ngClass]="{
+              'alert-primary':car.name === 'MG Hector',
+              'alert-secondary':car.name === 'Ford',
+              'alert-success':car.name === 'Kia',
+              'alert-danger':car.name === 'BMW',
+              'alert-warning':car.name === 'Jaguar',
+              'alert-info':car.name === 'Suzuki'
+            }">
+        {{ car.name }}
+    </div>
+</div> -->

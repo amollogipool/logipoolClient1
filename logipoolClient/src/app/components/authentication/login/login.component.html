@@ -1,0 +1,39 @@
+<div class="signin-content">
+    <mat-card id="loginMatCard">
+      <mat-toolbar id="loginToolbar">
+        <h2 class="loginalign">Logipool Login</h2>
+        <span class="spacer"></span>
+      </mat-toolbar>
+      <div>
+        <mat-form-field appearance="outline" class="formFieldInput">
+          <input matInput autocomplete="off" placeholder="Username" [formControl]="userName"
+            [(ngModel)]="LoginForm.username" required>
+          <mat-icon matSuffix>account_box</mat-icon>
+          <mat-error *ngIf="userName.hasError('required')">
+            Username is required.
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="outline" class="formFieldInput">
+            <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" 
+            [(ngModel)]="LoginForm.password" [formControl]="passWord" required>
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          <mat-error *ngIf="passWord.hasError('required')">
+            Password is required. 
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="buttons">
+        <button id="loginButton" mat-raised-button (click)="login()"><span>Login</span>
+          <mat-icon title="Log in">exit_to_app</mat-icon>
+        </button>
+        <button id="loginButton" mat-raised-button (click)="register()"><span>Register</span>
+          <mat-icon title="register">add</mat-icon>
+        </button>
+      </div>
+      <br>
+    </mat-card>
+  </div>

@@ -1,0 +1,121 @@
+/* .signin-content {
+  
+  background-image: url("C:\Users\PC-1\Documents\work\inventoryManag\src\assets\Images\bg2.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 150px 1rem;
+  } */
+  /* #bg{
+    position: fixed;
+    min-width: 200%;
+    min-height: 200%;
+  }
+  #bg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+  } */
+  
+  form {
+    /* position: relative; */
+    top:20px;
+  }
+  
+   mat-card {
+      position: relative;
+      max-width: 400px;
+      margin-left: 35%;
+      margin-top: 11%;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.644);
+      border-radius: 2%;
+      box-shadow: -1px 6px 21px -2px rgba(102, 102, 102, 0.822) !important;
+      -webkit-box-shadow: -1px 6px 21px -2px rgba(102, 102, 102, 0.822) !important;
+      -moz-box-shadow: -1px 6px 21px -2px rgba(102, 102, 102, 0.822) !important;
+   }
+
+  /* mat-card:hover{
+    background-position: right center;
+    background-color: rgb(101, 116, 197);
+  } */
+    
+  #loginToolbar{
+    
+     border-radius: 30px;
+     background-color: rgba(0, 0, 0, 0.712) !important;
+    }
+
+  .loginalign{
+    font-weight: bolder;
+    margin-left: 30%; 
+    color: rgb(250, 250, 250)!important;
+    border: px solid rgba(35, 24, 160, 1.53);
+  }
+   
+  .buttons{
+    position: relative;
+    top: 20px;
+  }
+
+  #loginButton{
+    border: 2px solid rgba(105, 105, 105, 0.89);
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.747);
+    border-radius: 50px !important;
+    top: -20px;
+    color: white;
+    position: relative;
+    width: 40%;
+    margin: 5px;
+    padding: 1px;
+   
+  }
+
+  .list-header-title{
+    color: rgba(255, 255, 255, 0.774);
+    background: rgba(151, 217, 255, 0);
+    margin-left: 10%;
+    /* box-align: center;
+    text-align: center; */
+    font-weight: bolder;
+}
+  
+  #loginButton:hover{
+    background-position: right center;
+    background-color: rgba(5, 5, 5, 0.692);
+  }
+  
+  #loginIcon{
+    margin-left: 10px;
+  }
+  .formFieldInput {
+     width: 100%;
+     margin: 5px;
+    }
+  
+    .spacer {
+      flex: 1 1 auto;
+    }
+  
+  .mat-flat-button.mat-accent{
+      border-radius: 50px !important; 
+    }
+  
+    /* .mat-flat-button.mat-accent:hover {
+      -moz-transform: scale(1.1) skew(-1deg, 1deg);
+      -webkit-transform: scale(1.1) skew(-1deg, 1deg);
+      -o-transform: scale(1.1) skew(-1deg, 1deg);
+      -ms-transform: scale(1.1) skew(-1deg, 1deg);
+      transform: scale(1.1) skew(-1deg, 1deg);
+  
+    }
+   */
+
+  
+  

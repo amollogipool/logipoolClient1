@@ -1,0 +1,39 @@
+<mat-toolbar id="toolbar">
+    <h2 class="regi">Registration</h2>
+    <span class="spacer"></span>
+</mat-toolbar>
+
+<div class="signin-content">
+    <mat-card>
+        <div>
+            <form class="my-form" [formGroup]="userRegister">
+                
+                <mat-form-field class="full-width-input">
+                    <input matInput placeholder="Admin Email" autocomplete="off" formControlName="username" required>
+                    <mat-error *ngIf="isFieldInvalid('username')">
+                        Please enter username.
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="full-width-input">
+                    <input matInput placeholder="Admin Email" autocomplete="off" formControlName="email" required>
+                    <mat-error *ngIf="isFieldInvalid('email')">
+                        Please enter email.
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="full-width-input">
+                    <input matInput placeholder="Admin Email" autocomplete="off" formControlName="password" required>
+                    <mat-error *ngIf="isFieldInvalid('password')">
+                        Please enter password.
+                    </mat-error>
+                </mat-form-field>
+            </form>
+        </div>
+
+        <div class="buttons">
+            <button id="close" mat-raised-button (click)="goToBack()"> Back</button>
+            <button id="close" mat-raised-button mat-primary (click)="onSubmit()">Save</button>
+        </div>
+    </mat-card>
+</div>
